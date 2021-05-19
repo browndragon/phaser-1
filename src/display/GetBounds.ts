@@ -33,5 +33,5 @@ export function GetBounds (...children: IGameObject[]): Rectangle
         }
     });
 
-    return new Rectangle(minX, minY, maxX, maxY);
+    return new Rectangle(minX, minY, maxX - minX, maxY - minY);
 }
